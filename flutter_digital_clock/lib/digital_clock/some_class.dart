@@ -118,7 +118,7 @@ class SetTextOnImage {
       minWidth: 0,
       maxWidth: 600,
     );
-    final amoffset = Offset(timeText.length > 4 ? 364 : 300, forGroundImage.height - 130.0);
+    final amoffset = Offset(timeText.length > 4 ? 370 : 300, forGroundImage.height - 130.0);
     amPainter.paint(canvas, amoffset);
 
     final dataStyle = TextStyle(
