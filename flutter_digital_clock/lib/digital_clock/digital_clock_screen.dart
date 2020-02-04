@@ -12,6 +12,7 @@ class DigitalClockScreen extends StatefulWidget {
 }
 
 class _DigitalClockScreenState extends State<DigitalClockScreen> with TickerProviderStateMixin {
+  
   AnimationController paddingAnimationController;
   final _random = new math.Random();
   var globalKey = new GlobalKey();
@@ -38,7 +39,7 @@ class _DigitalClockScreenState extends State<DigitalClockScreen> with TickerProv
     super.initState();
 
     timer = Timer.periodic(Duration(seconds: 18), (d) {
-      callAnimation();
+      if (mounted) callAnimation();
     });
   }
 

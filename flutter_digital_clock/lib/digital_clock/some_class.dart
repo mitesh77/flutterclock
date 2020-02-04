@@ -19,7 +19,7 @@ class CropPainter extends CustomPainter {
 
   @override
   void paint(Canvas canvas, Size size) {
-    var padding = 2 * tileObject.paddingValue;
+    var padding = 1 * tileObject.paddingValue * MediaQuery.of(context).devicePixelRatio;
     var w = ((tileObject.size.width - padding) * backgroundImage.width) / context.size.width;
     var h = ((tileObject.size.height - padding) * backgroundImage.height) / context.size.height;
     var source = Rect.fromLTWH((w * (tileObject.offset.dx + padding)) / (tileObject.size.width - padding),

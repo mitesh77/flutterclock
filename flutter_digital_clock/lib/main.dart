@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       statusBarBrightness: Brightness.light,
       systemNavigationBarColor: Colors.black,
       systemNavigationBarDividerColor: Theme.of(context).dividerColor,
-      systemNavigationBarIconBrightness: Brightness.light,
+      systemNavigationBarIconBrightness: Brightness.dark,
     ));
     return MaterialApp(
       title: 'Flutter Clock',
