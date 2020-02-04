@@ -1,2 +1,2 @@
 # flutterclock
-its is animated digital clock
+It is an animated digital clock
